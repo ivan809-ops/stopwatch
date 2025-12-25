@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Stopwatch</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+  <!-- FIXED STOPWATCH -->
+  <div class="stopwatch">
+    <div class="dial">
+      <div class="hand" id="hand"></div>
+      <div class="sub-hand" id="subHand"></div>
+      <div class="center"></div>
+
+      <div class="digital">
+        <div id="mainTime">00:00.00</div>
+        <div id="lapPreview">00:00.00</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- LAP HEADER -->
+  <div class="lap-header">
+    <span>Lap</span>
+    <span>Lap time</span>
+    <span>Total</span>
+  </div>
+
+  <!-- SCROLLABLE LAPS -->
+  <div class="laps-container">
+    <ul id="laps"></ul>
+  </div>
+
+  <!-- FIXED CONTROLS -->
+  <div class="controls">
+    <button id="lapBtn" disabled>Lap</button>
+    <button id="startBtn">▶</button>
+    <button id="resetBtn">⟲</button>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: #f2f4f6;
+  display: flex;
+  justify-content: center;
+}
+
+.app {
+  width: 390px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* STOPWATCH FIXED */
+.stopwatch {
+  padding: 20px 0 10px;
+  background: #f2f4f6;
+}
+
+.dial {
+  width: 260px;
+  height: 260px;
+  margin: auto;
+  border-radius: 50%;
+  background: #fff;
+  position: relative;
+  box-shadow: inset 0 0 0 6px #f2f4f6;
+}
+
+.hand {
+  width: 2px;
+  height: 120px;
+  background: #607d8b;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform-origin: bottom;
+}
+
+.sub-hand {
+  width: 2px;
+  height: 80px;
+  background: #000;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform-origin: bottom;
+}
+
+.center {
+  width: 10px;
+  height: 10px;
+  background: #000;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.digital {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#mainTime {
+  font-size: 28px;
+}
+
+#lapPreview {
+  font-size: 14px;
+  color: #777;
+}
+
+/* LAP HEADER */
+.lap-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  font-size: 14px;
+  color: #777;
+  border-bottom: 1px solid #ddd;
+}
+
+/* SCROLLABLE LAPS */
+.laps-container {
+  flex: 1;
+  overflow-y: auto;
+}
+
+#laps {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#laps li {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 20px;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+.fastest {
+  color: green;
+}
+
+.slowest {
+  color: red;
+}
+
+/* CONTROLS FIXED */
+.controls {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background: #f2f4f6;
+}
+
+.controls button {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: none;
+  font-size: 22px;
+}
+
+#lapBtn {
+  background: #e0e0e0;
+}
+
+#startBtn {
+  background: #6b7c93;
+  color: #fff;
+}
+
+#resetBtn {
+  background: #fff;
+}
